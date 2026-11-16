@@ -19,6 +19,7 @@ TeamCP 게임의 공식 정보와 공개 문서를 관리하는 GitHub Pages 저
 - 인디 개발 타이쿤 (`com.teamcp.indiedevtycoon`)
 - 냥냥 해적단: 야식 대작전 (`com.teamcp.catpirates`)
 - 냥이 합치기 (`com.teamcp.nyangmerge`)
+- 냥이 츄르 버스 (`com.teamcp.nyanchurubus`)
 
 ## 냥탐정 개인정보처리방침
 
@@ -55,3 +56,9 @@ TeamCP 게임의 공식 정보와 공개 문서를 관리하는 GitHub Pages 저
 한국어 기본 URL `/games/nyang-merge/privacy/`와 `#delete-data` 앵커를 유지하고, 영어는 `/games/nyang-merge/privacy/en/`에 둔다.
 `tools/privacy-nyang-merge/*.json`에서 수정하고 `node tools/build-nyang-merge-privacy.mjs`로 생성한다 (`--check`로 누락 확인).
 계정·로그인·서버 없는 기기 저장, Google Play 게임즈 없음, 광고 구성(Unity LevelPlay + Unity Ads, 배너·전면·보상형), 모든 이용자 대상 첫 실행 맞춤 광고 동의(선택 전 SDK 미시작·광고 없음, 설정에서 다시 선택), Android 자동 백업 허용, 앱 내 결제 없음을 기준으로 작성했다. 앱 동작이 바뀌면 함께 갱신한다.
+
+## 냥이 츄르 버스 개인정보처리방침
+
+한국어 기본 URL `/games/nyan-churu-bus/privacy/`와 `#delete-data` 앵커를 유지하고, 영어는 `/games/nyan-churu-bus/privacy/en/`에 둔다.
+`tools/privacy-nyan-churu-bus/*.json`에서 수정하고 `node tools/build-nyan-churu-bus-privacy.mjs`로 생성한다 (`--check`로 누락 확인).
+계정·로그인·서버 없는 기기 저장, Android 자동 백업 꺼짐(allowBackup=false), 광고 구성(Unity LevelPlay, 배너·전면·보상형 간식 찬스, 자체 배너는 탭할 때만 사이트 열기), 모든 이용자 대상 첫 실행 맞춤 광고 동의(선택 전 SDK 미시작, 설정에서 다시 선택), 오류 신고 기능 없음(추가되면 방침 먼저 갱신), 앱 내 결제 없음을 기준으로 작성했다(앱 1.0.0, 2026-11-17). 앱 동작이 바뀌면 함께 갱신한다.
