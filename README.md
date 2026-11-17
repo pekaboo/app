@@ -21,6 +21,7 @@ TeamCP 게임의 공식 정보와 공개 문서를 관리하는 GitHub Pages 저
 - 냥이 합치기 (`com.teamcp.nyangmerge`)
 - 냥이 츄르 버스 (`com.teamcp.nyanchurubus`)
 - 냥냥 도시락 공장 (`com.teamcp.catbentosort`)
+- 냥이 털실 풀기 (`com.teamcp.yarntangle`)
 
 ## 냥탐정 개인정보처리방침
 
@@ -69,3 +70,9 @@ TeamCP 게임의 공식 정보와 공개 문서를 관리하는 GitHub Pages 저
 한국어 기본 URL `/games/cat-bento-sort/privacy/`와 `#delete-data` 앵커를 유지하고, 게임과 같은 8개 언어(영어·일본어·스페인어·포르투갈어(브라질)·중국어(번체)·독일어·프랑스어)는 `/games/cat-bento-sort/privacy/{en,ja,es,pt-br,zh-tw,de,fr}/`에 둔다. 앱 설정의 방침 버튼이 앱 언어의 경로를 연다(앱 저장소 `tools/strings.csv`의 `privacy_url`).
 `tools/privacy-cat-bento-sort/*.json`에서 수정하고 `node tools/build-cat-bento-sort-privacy.mjs`로 생성한다 (`--check`로 누락 확인, 절 id·`#delete-data` 1개·금지 이름 검사 포함).
 계정·로그인 없는 기기 저장, Android 자동 백업 꺼짐(allowBackup=false), 광고 구성(Unity LevelPlay + Unity Ads, 배너·전면·보상형 냥이 찬스, 자체 배너는 탭할 때만 사이트 열기), 모든 이용자 대상 첫 실행 맞춤 광고 동의(선택 전 SDK 미시작, 설정에서 다시 선택), 설정에서 이용자가 직접 보내는 오류 신고(설명·앱·버전·화면·언어·기기 모델, TeamCP 신고 서버·Cafe24), 앱 내 결제 없음을 기준으로 작성했다(앱 1.0.0, 2026-11-17). 앱 동작이 바뀌면 함께 갱신한다.
+
+## 냥이 털실 풀기 개인정보처리방침
+
+한국어 기본 URL `/games/yarn-tangle-cats/privacy/`와 `#delete-data` 앵커를 유지하고, 게임과 같은 8개 언어(영어·일본어·스페인어·포르투갈어(브라질)·중국어(번체)·독일어·프랑스어)는 `/games/yarn-tangle-cats/privacy/{en,ja,es,pt-br,zh-tw,de,fr}/`에 둔다. 앱 설정·첫 실행 동의 카드의 방침 버튼이 앱 언어의 경로를 연다(앱 저장소 `tools/strings.csv`의 `privacy_url`).
+`tools/privacy-yarn-tangle-cats/*.json`에서 수정하고 `node tools/build-yarn-tangle-cats-privacy.mjs`로 생성한다 (`--check`로 누락 확인, 절 id·`#delete-data` 1개·금지 이름 검사 포함).
+계정·로그인 없는 기기 저장(progress.json·설정), Android 자동 백업 꺼짐(allowBackup=false), 광고 구성(Unity LevelPlay + Unity Ads, 배너·전면·보상형 냥이 가위 찬스, 자체 배너는 탭할 때만 사이트 열기), 모든 이용자 대상 첫 실행 맞춤 광고 동의(선택 전 SDK 미시작, 설정에서 다시 선택), 설정에서 이용자가 직접 보내는 오류 신고(설명·앱·버전·화면·언어·기기 모델, TeamCP 신고 서버·Cafe24), 앱 내 결제 없음을 기준으로 작성했다(앱 1.0.0, 2026-11-18). 앱 동작이 바뀌면 함께 갱신한다. 첫 화면 카드는 아직 없다(출시 시 추가).
