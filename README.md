@@ -89,3 +89,9 @@ TeamCP 게임의 공식 정보와 공개 문서를 관리하는 GitHub Pages 저
 한국어 기본 URL `/games/cat-ring-twist/privacy/`와 `#delete-data` 앵커를 유지하고, 게임과 같은 8개 언어(영어·일본어·스페인어·포르투갈어(브라질)·중국어(번체)·독일어·프랑스어)는 `/games/cat-ring-twist/privacy/{en,ja,es,pt-br,zh-tw,de,fr}/`에 둔다. 앱 설정·첫 실행 동의 카드의 방침 버튼이 앱 언어의 경로를 연다(앱 저장소 `tools/strings.csv`의 `privacy_url`).
 `tools/privacy-cat-ring-twist/*.json`에서 수정하고 `node tools/build-cat-ring-twist-privacy.mjs`로 생성한다 (`--check`로 누락 확인, 절 id·`#delete-data` 1개·금지 이름 검사 포함). 양식은 냥이 털실 풀기 방침과 같다.
 계정·로그인 없는 기기 저장(진행 JSON·설정), Android 자동 백업 꺼짐(allowBackup=false), 광고 구성(Unity LevelPlay + Unity Ads, 배너·`다음 레벨` 뒤 전면·보상형 힌트, 자체 배너는 탭할 때만 사이트 열기), 모든 이용자 대상 첫 실행 맞춤 광고 동의(선택 전 SDK 미시작, 설정에서 다시 선택), 설정에서 이용자가 직접 보내는 오류 신고(설명·앱·버전·화면·언어·기기 모델, TeamCP 신고 서버·Cafe24, 보관 90일), 앱 내 결제 없음을 기준으로 작성했다(앱 1.0.0, 2026-11-19 RING-QAFIX1). 앱 동작이 바뀌면 함께 갱신한다. 첫 화면 카드는 아직 없다(출시 시 추가).
+
+## 냥이랑 한글 개인정보처리방침
+
+한국어 기본 URL `/games/meow-hangul/privacy/`와 `#delete-data` 앵커를 유지하고, 앱과 같은 8개 언어(영어·일본어·스페인어·포르투갈어(브라질)·중국어(번체)·독일어·프랑스어)는 `/games/meow-hangul/privacy/{en,ja,es,pt-br,zh-tw,de,fr}/`에 둔다. 앱(`com.teamcp.meowhangul`)은 아직 출시 전이라 게임 소개 페이지와 첫 화면 카드가 없고 위 ‘현재 등록된 게임’ 목록에도 넣지 않았다(출시 시 추가). 방침 페이지의 돌아가기 링크는 첫 화면(`/`)으로 간다.
+`tools/privacy-meow-hangul/*.json`에서 수정하고 `node tools/build-meow-hangul-privacy.mjs`로 생성한다 (`--check`로 누락 확인, 절 id·`#delete-data` 1개 검사 포함). 양식은 냥냥 고리 돌리기 방침과 같고 ‘음성과 마이크’ 절(`voice`)이 하나 더 있다.
+계정·로그인 없는 기기 저장(학습 진행·복습 일정·설정), Android 자동 백업 꺼짐(allowBackup=false), 선택 기능 ‘듣고 따라 하기’의 마이크(처음 녹음을 누를 때만 권한 요청, 최대 15초 임시 녹음 1개, 업로드·채점·음성 인식 없음, 벗어나면 삭제), 미리 만든 AI 음성(Supertonic 3), 광고 구성(Unity LevelPlay + Unity Ads·ironSource, AdMob·UMP·Firebase 없음, 배너·결과 화면을 떠날 때의 전면·보상형 힌트/다시 풀기/보너스 복습, 자체 배너는 탭할 때만 사이트 열기), 모든 이용자 대상 첫 실행 맞춤 광고 동의(선택 전 SDK 미시작, 설정에서 다시 선택, 거부 시 do-not-sell), 문제·결과 화면과 설정에서 이용자가 직접 보내는 오류 신고(설명·분류·앱 버전·화면·문제 ID·보이는 문구·언어·기기 모델·신고 번호, TeamCP 신고 서버·Cafe24, 보관 90일, 미전송분 기기 보관 최대 100건), 앱 내 결제 없음을 기준으로 작성했다(앱 1.0.0, 2026-11-19 MH-QA3FIX). 앱 동작이 바뀌면 함께 갱신한다.
