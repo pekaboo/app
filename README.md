@@ -52,7 +52,7 @@ TeamCP 게임의 공식 정보와 공개 문서를 관리하는 GitHub Pages 저
 
 한국어 기본 URL `/games/cat-pirates/privacy/`와 `#delete-data` 앵커를 유지하고, 영어는 `/games/cat-pirates/privacy/en/`에 둔다(게임 UI는 한국어).
 `tools/privacy-cat-pirates/*.json`에서 수정하고 `node tools/build-cat-pirates-privacy.mjs`로 생성한다 (`--check`로 누락 확인).
-광고 구성(Unity LevelPlay + Unity Ads, 보상형·전면, 배너 없음, 어린이 대상 아님), 모든 이용자 대상 첫 실행 맞춤 광고 동의(선택 전 SDK 미시작, 설정에서 변경), Google Play 게임즈 v2 자동 로그인·업적·리더보드(클라우드 저장 없음), Room + DataStore 기기 저장, Android 자동 백업 허용, 앱 내 결제 없음을 기준으로 작성했다. 앱 동작이 바뀌면 함께 갱신한다.
+광고 구성(Unity LevelPlay + Unity Ads, 보상형·전면, 배너 없음, 어린이 대상 아님), 모든 이용자 대상 첫 실행 맞춤 광고 동의(선택 전 SDK 미시작, 설정에서 변경), Google Play 게임즈 v2 자동 로그인·업적·리더보드(클라우드 저장 없음), Room + DataStore 기기 저장, Android 자동 백업 허용, 앱 내 결제 없음을 기준으로 작성했다. 앱 동작이 바뀌면 함께 갱신한다. 2026-11-19(PIR-REPORT): 설정의 오류 신고(이용자가 직접 보낼 때만 전송, Cafe24 호스팅 서버 보관 90일, 미전송분 기기 보관·백업 제외, 이메일 삭제 요청)를 7절로 추가하고 ‘오류 보고 도구가 없다’·‘게임 서버가 없다’는 옛 문구를 고쳤다.
 
 ## 냥이 합치기 개인정보처리방침
 
