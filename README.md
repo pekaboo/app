@@ -2,6 +2,15 @@
 
 TeamCP 게임의 공식 정보와 공개 문서를 관리하는 GitHub Pages 저장소다.
 
+## 방침 화면 생성 공통 규칙 (POLICY-MOBILE)
+
+14개 방침 생성기는 `tools/policy-style.mjs`로 게임별 `policy.css`를 HTML 안에 넣는다.
+별도 CSS 요청이 지연되어 첫 화면을 막는 의존성을 없앴다. 밝은 방침은 `color-scheme: only light`,
+어두운 방침은 기존 `dark`와 색상을 유지한다. 원문 JSON과 본문·언어 링크는 바꾸지 않는다.
+수정 후 해당 생성기의 `--check`, `node tools/check-policy-render.mjs`를 실행한다.
+게시 후 `node tools/check-policy-render.mjs --live`는 전체 97개 방침의 HTTP 200과 소스 일치를 확인한다.
+이 검사는 모바일 화면 판정을 대신하지 않는다. POLICY-MOBILE의 실제 기기 전후 판정은 아직 미검증이다.
+
 ## 구조
 
 - `/index.html`: 전체 게임 목록과 공식 지원 허브
