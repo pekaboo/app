@@ -58,7 +58,7 @@ TeamCP 게임의 공식 정보와 공개 문서를 관리하는 GitHub Pages 저
 
 한국어 기본 URL `/games/nyang-merge/privacy/`와 `#delete-data` 앵커를 유지하고, 영어는 `/games/nyang-merge/privacy/en/`에 둔다.
 `tools/privacy-nyang-merge/*.json`에서 수정하고 `node tools/build-nyang-merge-privacy.mjs`로 생성한다 (`--check`로 누락 확인).
-계정·로그인·서버 없는 기기 저장, Google Play 게임즈 없음, 광고 구성(Unity LevelPlay + Unity Ads, 배너·전면·보상형), 모든 이용자 대상 첫 실행 맞춤 광고 동의(선택 전 SDK 미시작·광고 없음, 설정에서 다시 선택), Android 자동 백업 허용, 앱 내 결제 없음을 기준으로 작성했다. 앱 동작이 바뀌면 함께 갱신한다.
+계정·로그인·서버 없는 기기 저장, Google Play 게임즈 없음, 광고 구성(Unity LevelPlay + Unity Ads, 배너·전면·보상형), 모든 이용자 대상 첫 실행 맞춤 광고 동의(선택 전 SDK 미시작·광고 없음, 설정에서 다시 선택), Android 자동 백업 허용, 앱 내 결제 없음을 기준으로 작성했다. 앱 동작이 바뀌면 함께 갱신한다. 2026-11-19(NM-QA5FIX): 설정의 오류 신고(이용자가 직접 보낼 때만 전송, Cafe24 호스팅 서버 보관 90일, 미전송분 기기 보관)를 7절로 추가하고 ‘오류 보고 도구가 없다’·‘서버에 보관하는 정보가 없다’는 옛 문구를 고쳤다.
 
 ## 냥이 츄르 버스 개인정보처리방침
 
