@@ -11,6 +11,13 @@ TeamCP 게임의 공식 정보와 공개 문서를 관리하는 GitHub Pages 저
 게시 후 `node tools/check-policy-render.mjs --live`는 전체 97개 방침의 HTTP 200과 소스 일치를 확인한다.
 이 검사는 모바일 화면 판정을 대신하지 않는다. POLICY-MOBILE의 실제 기기 전후 판정은 아직 미검증이다.
 
+## 개인정보 보호법 추가 고지 (POLICY-FIX·FIX2·FIX3)
+
+14개 생성기는 `tools/policy-notice.mjs`의 `applyPolicyNotice()`를 거쳐 HTML을 쓴다. 이 단계가 국외 이전 세부 고지
+(제28조의8), 정보주체 권리·만 14세 미만과 법정대리인·안전성 확보 조치·개인정보 보호책임자(제30조, 시행령 제31조) 절과
+차례 항목을 넣는다. 문구 원본은 `tools/policy-notice.json` 한 곳이다. 보호책임자 표기를 바꿀 때는 `officer` 항목만 고치고
+생성기를 다시 돌린다. 생성기가 없는 3분 냥냥 던전(`cat-rush3`)과 슬라임 택배(`slime-express`) 한국어 쪽은 HTML을 직접 고친다.
+
 ## 구조
 
 - `/index.html`: 전체 게임 목록과 공식 지원 허브
