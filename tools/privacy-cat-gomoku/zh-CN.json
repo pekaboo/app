@@ -1,0 +1,112 @@
+{
+  "language": "zh-CN",
+  "title": "Cat Gomoku 隐私政策",
+  "description": "Cat Gomoku 隐私政策",
+  "back": "游戏信息",
+  "date": "最后更新：2026年11月23日",
+  "summary": "TeamCP 营运 Android 游戏 Cat Gomoku（com.teamcp.catgomoku）。您可免注册以访客游玩。我们不为自有注册功能收集姓名、电子邮件、电话或 Google 密码。依您选用的功能，游戏使用 Google Play Games、Firebase 在线对局、Unity LevelPlay 和 Unity Ads。",
+  "contents": "目录",
+  "resources": "第三方政策",
+  "contact": "联系方式",
+  "links": [
+    "Unity LevelPlay / Unity Ads / ironSource",
+    "Google Play Games",
+    "Google Firebase"
+  ],
+  "sections": [
+    {
+      "id": "scope",
+      "title": "1. 适用范围",
+      "paragraphs": [
+        "TeamCP 营运 Android 游戏 Cat Gomoku（com.teamcp.catgomoku）。您可免注册以访客游玩。我们不为自有注册功能收集姓名、电子邮件、电话或 Google 密码。依您选用的功能，游戏使用 Google Play Games、Firebase 在线对局、Unity LevelPlay 和 Unity Ads。"
+      ]
+    },
+    {
+      "id": "local",
+      "title": "2. 设备内数据",
+      "paragraphs": [
+        "访客识别码、战绩、谜题／挑战／塔进度、成就、货币、猫咪与外观解锁及选择、奖励纪录、语言、音效和震动设置保存在 Android 应用程序专用空间。使用分析与诊断纪录仅在本机运作，不发送至外部分析或自动当机回报服务器。广告同意以设备设置保存，不包含于 Google Play Games Saved Games。",
+        "Android 自动备份已允许，因此依设备与 Google 帐户设置，应用程序数据可能纳入备份。广告同意不包含于云端存盘是指 Google Play Games Saved Games，并不表示排除 Android 备份。"
+      ]
+    },
+    {
+      "id": "play-games",
+      "title": "3. 链接 Google Play Games",
+      "paragraphs": [
+        "链接 Google Play Games 为选用功能。Google 可能处理验证状态、玩家识别码与显示名称。战绩、谜题／挑战进度、货币、猫咪／外观解锁、设置、成就达成及增量进度可能发送至游戏存盘与成就服务，以提供跨设备保存、还原和成就。"
+      ]
+    },
+    {
+      "id": "online",
+      "title": "4. 在线一对一对局",
+      "paragraphs": [
+        "选用在线对局时，使用 Google Firebase 匿名验证与 Realtime Database。可能处理匿名 UID、显示名称、所选猫咪、Elo、阶级、胜败和局与排名、配对状态、房间识别码、落子座标、连接状态、对局结果与处理时间。用途为配对、即时同步、结果结算、排名和防止滥用。"
+      ]
+    },
+    {
+      "id": "ads",
+      "title": "5. 广告与数据处理",
+      "paragraphs": [
+        "Unity LevelPlay 中介由 Unity Ads 与 ironSource（Unity LevelPlay 中介广告联播网）提供的横幅、插页及选用奖励广告。可能处理 IP 及推估地区、设备型号、系统／应用程序版本、语言、网络信息、允许的广告／设备识别码、请求、曝光、点击、观看完成及广告错误／诊断数据。用途为投放、频率限制、成效衡量、防诈及经同意的个人化广告。实际范围依地区、Android 设置、同意及服务商政策而异。"
+      ]
+    },
+    {
+      "id": "choices",
+      "title": "6. 广告同意选择",
+      "paragraphs": [
+        "所有用户首次启动均会看到应用程序自有同意卡，选择个人化广告或仅非个人化广告。选择前不启动广告 SDK，也不请求广告。拒绝个人化不代表广告减少，会向 LevelPlay 传达拒绝同意与拒绝出售／分享信号（do_not_sell=true）。可随时于设置重新选择，也可在 Android 广告隐私／广告 ID 设置控制。奖励广告为选用，加载失败设计上不阻挡游戏进度。"
+      ]
+    },
+    {
+      "id": "reports",
+      "title": "7. 问题回报",
+      "paragraphs": [
+        "若要送出回报，请在设置 >「错误回报／联系我们」填写说明并点按送出。应用程序不会自动发送当机报告。回报包含下列信息。"
+      ],
+      "items": [
+        "你填写的说明（最多 2,000 字）与你选择的回报类型",
+        "自动附加：应用程序识别码与版本、回报时所在的画面名称、应用编程语言、设备型号名称，以及每次回报时新产生的随机回报编号"
+      ],
+      "after": [
+        "未能送出的回报会保存在设备上，连接恢复后可能会重新发送。",
+        "回报中不会放入广告 ID、帐户、游戏纪录或位置。请勿在说明中填写姓名、联系方式等个人数据。回报会通过加密连接（HTTPS）保存在 TeamCP 营运的回报接收服务器（网站代管：Cafe24，大韩民国），仅用于确认与修正错误。服务器与代管业者在通信过程中可能会将 IP 地址作为连接纪录处理。保存在服务器上的回报自收到之日起保存 90 天后删除。"
+      ]
+    },
+    {
+      "id": "providers",
+      "title": "8. 服务商与境外处理",
+      "paragraphs": [
+        "Google Play Games 提供选用登录、云端存盘及成就；Google Firebase 提供匿名验证、在线对局和排名；Unity LevelPlay / Unity Ads / ironSource 提供广告中介、投放、衡量及防诈。各服务商可依政策于境外保存或处理数据。TeamCP 不出售个人数据。广告相关权利及拒绝出售／分享方式请参阅 Unity 政策。"
+      ]
+    },
+    {
+      "id": "delete-data",
+      "title": "9. 保存与删除数据",
+      "paragraphs": [
+        "设备数据可通过游戏重设、Android 清除应用程序数据或卸载删除。Google Play Games 数据可通过游戏的 Google Play 数据删除及 Google 帐户管理，适用 Google 保存政策。Firebase 个人文件、评分及对局数据依在线功能与防滥用所需保存，可通过下方联系方式申请删除。广告数据适用 Unity 的保存／删除政策和权利进程；卸载不会删除已处理的广告数据。请提供游戏名称及请求，勿传密码或身分证件。",
+        "已送出的问题回报：请寄信至 teamcp.channel@gmail.com，告知送出日期与设备型号（如可能，请附上部分回报内容），我们会找出并删除。"
+      ]
+    },
+    {
+      "id": "rights",
+      "title": "10. 您的权利",
+      "paragraphs": [
+        "访客单人游玩无须链接 Google Play Games 或使用在线对局。依所在地法律享有的查找、更正、删除、限制、反对或撤回同意等权利，请联系 teamcp.channel@gmail.com。TeamCP 未持有的数据会引导至服务商进程。"
+      ]
+    },
+    {
+      "id": "young-users",
+      "title": "11. 儿童数据",
+      "paragraphs": [
+        "本游戏并非专为儿童设计，目前商店目标为13岁以上。内容分级不代表儿童服务指定。我们告知广告服务本游戏非儿童导向。如发现未取得必要监护人同意而直接收集儿童个人数据，将采取删除等适当措施。"
+      ]
+    },
+    {
+      "id": "updates",
+      "title": "12. 安全与政策变更",
+      "paragraphs": [
+        "本机数据保存在 Android 应用程序专用空间。Google Play Games、Firebase 和广告传输采用各服务商安全通信，并依需要限制访问权和 Firebase 安全规则。数据、服务或功能变更时更新本政策及日期；重大变更于游戏、商店或本页公告。"
+      ]
+    }
+  ]
+}

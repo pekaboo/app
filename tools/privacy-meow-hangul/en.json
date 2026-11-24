@@ -20,7 +20,7 @@
       "id": "scope",
       "title": "1. Scope and operator",
       "paragraphs": [
-        "TeamCP develops and operates the Android app “Meow Hangul” (냥이랑 한글, com.teamcp.meowhangul), a learning app in which a cat teacher helps you learn Hangul, the Korean alphabet. This policy explains what information the app handles and the choices you have. Contact: teamcp.channel@gmail.com.",
+        "TeamCP develops and operates the Android app “Meow Hangul” (com.teamcp.meowhangul), a learning app in which a cat teacher helps you learn Hangul, the Korean alphabet. This policy explains what information the app handles and the choices you have. Contact: teamcp.channel@gmail.com.",
         "The app has no sign-up, login, chat or in-app purchases. It does not ask for or collect your name, email, phone number, location (GPS), contacts, camera, photos or storage. The microphone is used only in the optional “Listen and repeat” feature, and recordings never leave your device (section 3). The app itself declares two permissions: internet (ads and problem reports) and the microphone (RECORD_AUDIO, optional feature). Network state, the advertising ID (AD_ID), the Android ad services attribution and topics APIs and the WAKE_LOCK, RECEIVE_BOOT_COMPLETED and FOREGROUND_SERVICE permissions come from the ad SDK libraries. If you email support, we use your reply address and message only to answer you."
       ]
     },

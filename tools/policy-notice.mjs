@@ -15,7 +15,7 @@ const dl = (title, idattr, labels, vals) => [`<div class="xfer-item" id="${idatt
   ...vals.map((v, i) => `<dt>${labels[i]}</dt><dd>${v}</dd>`), '</dl></div>'].join(NL);
 
 function officerHtml(lang) {
-  const colon = ['ja', 'zh-tw'].includes(lang) ? '：' : lang === 'fr' ? ' : ' : ': ';
+  const colon = ['ja', 'zh-tw', 'zh-cn'].includes(lang) ? '：' : lang === 'fr' ? ' : ' : ': ';
   const rows = D.officer[lang].map(([k, v]) => `<li><strong>${k}</strong>${colon}${v.replaceAll('{mail}', D.mail)}</li>`).join('');
   return `<ul class="pipa-officer">${rows}</ul>${NL}<p>${D.officerNote[lang]}</p>`;
 }
@@ -31,7 +31,7 @@ function pipaBlock(g, lang) {
   if (c.pgs || c.backup) parts.push(t.p_google);
   if (c.report) parts.push(t.p_report);
   if (c.firebase) parts.push(t.p_firebase);
-  const sep = ['ja', 'zh-tw'].includes(lang) ? '、' : lang !== 'ko' ? ', ' : '·';
+  const sep = ['ja', 'zh-tw', 'zh-cn'].includes(lang) ? '、' : ['ja','zh-tw','zh-cn'].includes(lang) ? '、' : lang !== 'ko' ? ', ' : '·';
   const sec = [t.s_device, t.s_transport.replace('{parts}', parts.join(sep))];
   if (c.report) sec.push(t.s_report);
   if (c.firebase) sec.push(t.s_firebase);
@@ -62,7 +62,7 @@ function xferForeign(g, lang) {
     if (bk) { items.push(x.backup_item); why.push(x.backup_why); refuse.push(x.backup_refuse); }
     const title = 'Google — ' + [...(pgs ? [x.pgs_t] : []), ...(bk ? [x.backup_t] : [])].join(' · ');
     const basis = pgs ? x.g_basis_pgs + (bk ? x.g_basis_pgs_backup : '') : x.g_basis_backup;
-    const jw = ['ja', 'zh-tw'].includes(lang) ? '、' : ', ';
+    const jw = ['ja', 'zh-tw', 'zh-cn'].includes(lang) ? '、' : ', ';
     out.push(dl(title, 'xfer-google', L, [x.g_who, x.g_country, items.join('<br>'), x.g_when, why.join(jw),
       pgs ? x.g_keep_pgs : x.g_keep_backup, basis, refuse.join(' ')]));
   }

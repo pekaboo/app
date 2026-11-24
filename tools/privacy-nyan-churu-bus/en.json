@@ -20,7 +20,7 @@
       "id": "scope",
       "title": "1. Scope and operator",
       "paragraphs": [
-        "TeamCP develops and operates the Android game “Nyan Churu Bus” (냥이 츄르 버스, com.teamcp.nyanchurubus). This policy explains what information the game handles and the choices you have. Contact: teamcp.channel@gmail.com.",
+        "TeamCP develops and operates the Android game “Nyan Churu Bus” (com.teamcp.nyanchurubus). This policy explains what information the game handles and the choices you have. Contact: teamcp.channel@gmail.com.",
         "The game has no sign-up, login, chat or in-app purchases. It does not ask for or collect your name, email, phone number, precise location (GPS), contacts, microphone, camera, photos or storage. The permissions the app itself uses are internet and network state (ads and issue reports), vibration (effects) and the advertising ID (AD_ID). The Android ad services attribution and topics APIs and the WAKE_LOCK, RECEIVE_BOOT_COMPLETED and FOREGROUND_SERVICE permissions come from the ad SDK libraries. If you email support, we use your reply address and message only to answer you."
       ]
     },

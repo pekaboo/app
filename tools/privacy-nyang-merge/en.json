@@ -20,7 +20,7 @@
       "id": "scope",
       "title": "1. Scope and operator",
       "paragraphs": [
-        "TeamCP develops and operates the Android game “Nyang Merge” (냥이 합치기, com.teamcp.nyangmerge). This policy explains what information the game handles and the choices you have. Contact: teamcp.channel@gmail.com.",
+        "TeamCP develops and operates the Android game “Nyang Merge” (com.teamcp.nyangmerge). This policy explains what information the game handles and the choices you have. Contact: teamcp.channel@gmail.com.",
         "The game has no account sign-up of its own, no server that receives game records, no chat and no in-app purchases. Signing in is optional, and the only sign-in is Google Play Games. We do not request or collect your name, email, phone number, location (GPS), contacts, microphone, camera or storage. The permissions the app itself uses are internet and network state (ads, Play Games and problem reports), vibration (effects) and the advertising ID (AD_ID); the Android ad services attribution and topics APIs may be used by the ad SDK, and the WAKE_LOCK, RECEIVE_BOOT_COMPLETED and FOREGROUND_SERVICE permissions are included by the ad SDK libraries. If you contact support by email, we use your address and message only to reply."
       ]
     },
@@ -82,7 +82,7 @@
       "title": "6. Your ad choices",
       "items": [
         "Every player is shown an allow/decline choice — “Do you consent to personalized ads?” — on first launch; the ad SDK does not start and no ads are shown until you choose. If you decline, you see the same number of ads but they are not personalized.",
-        "You can make the choice again anytime under Settings > “광고 동의 다시 보기” (review ad consent).",
+        "You can make the choice again anytime under Settings > “review ad consent”.",
         "In Android Settings > Privacy > Ads you can reset or delete your advertising ID. Once deleted, a zeroed value is sent instead and cannot be used for personalized ads.",
         "Use the privacy icon inside an ad or the Unity policy below to access, delete or opt out of ad data.",
         "With the internet turned off no ad requests are made, and the game can still be played offline."
@@ -119,7 +119,7 @@
       "id": "delete-data",
       "title": "9. Deleting data and retention",
       "items": [
-        "On the device: uninstall the app, or use Android Settings > Apps > 냥이 합치기 (Nyang Merge) > Storage > Clear data to erase all game data including settings and unsent reports. TeamCP keeps no game records on its servers.",
+        "On the device: uninstall the app, or use Android Settings > Apps > (Nyang Merge) > Storage > Clear data to erase all game data including settings and unsent reports. TeamCP keeps no game records on its servers.",
         "Problem reports you sent: email teamcp.channel@gmail.com with the date you sent it and your device model (and part of the message if you can), and we will find and delete it.",
         "Google Play Games: you can remove leaderboard scores and your Play Games profile by deleting the game data or profile, or signing out, in the Google Play Games app (or Play Store) settings.",
         "Android backup: turn off or delete backups under Settings > Google > Backup.",

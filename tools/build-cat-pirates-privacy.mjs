@@ -10,11 +10,11 @@ import { applyPolicyNotice } from './policy-notice.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 // 방침은 한국어·영어로 제공한다 (게임 UI는 한국어, 영어는 스토어·국외 이용자용)
-const languages = { ko: '한국어', en: 'English' };
+const languages = { 'zh-CN': '简体中文', en: 'English' };
 const ids = ['scope', 'local', 'play-games', 'backup', 'ads', 'choices', 'reports', 'providers', 'delete-data', 'rights', 'young-users', 'updates'];
-const base = '/games/cat-pirates/privacy/';
-const origin = 'https://sjw0408.github.io';
-const route = code => code === 'ko' ? base : `${base}${code}/`;
+const base = '/app/games/cat-pirates/privacy/';
+const origin = 'https://pages.wangyitu.tech';
+const route = code => code === 'zh-CN' ? base : `${base}${code}/`;
 const esc = text => String(text).replace(/[&<>"']/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]));
 const paragraph = list => (list ?? []).map(text => `      <p>${esc(text)}</p>`).join('\n');
 const list = items => items?.length ? `      <ul>\n${items.map(text => `        <li>${esc(text)}</li>`).join('\n')}\n      </ul>` : '';
@@ -59,7 +59,7 @@ ${policyStyle(root, base)}
 </head>
 <body>
   <main>
-    <a class="back" href="/games/cat-pirates/">← ${esc(data.back)}</a>
+    <a class="back" href="/app/games/cat-pirates/">← ${esc(data.back)}</a>
     <nav class="languages" aria-label="Language">
 ${Object.entries(languages).map(([lang, name]) => `      <a href="${route(lang)}" lang="${lang}" hreflang="${lang}"${lang === code ? ' aria-current="page"' : ''}>${esc(name)}</a>`).join('\n')}
     </nav>
@@ -97,7 +97,7 @@ ${resources.map((href, i) => `        <li><a href="${href}">${esc(data.links[i])
 `;
   // 개인정보 보호법 추가 고지(국외 이전·권리·만 14세 미만·안전성·보호책임자): tools/policy-notice.json
   const html = applyPolicyNotice(baseHtml, 'cat-pirates', code);
-  const target = resolve(root, `.${route(code)}`, 'index.html');
+  const target = resolve(root, '.', route(code).replace(/^\/app(?=\/)/, '').replace(/^\//, ''), 'index.html');
   let existing = null;
   try { existing = readFileSync(target, 'utf8'); } catch (error) { if (error.code !== 'ENOENT') throw error; }
   if (existing !== html) {

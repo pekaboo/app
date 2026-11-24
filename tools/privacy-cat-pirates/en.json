@@ -20,7 +20,7 @@
       "id": "scope",
       "title": "1. Scope and operator",
       "paragraphs": [
-        "TeamCP develops and operates the Android game “Cat Pirates: Midnight Snack Heist” (냥냥 해적단: 야식 대작전, com.teamcp.catpirates). This policy explains what information the game handles and the choices you have. Contact: teamcp.channel@gmail.com.",
+        "TeamCP develops and operates the Android game “Cat Pirates: Midnight Snack Heist” (com.teamcp.catpirates). This policy explains what information the game handles and the choices you have. Contact: teamcp.channel@gmail.com.",
         "The game has no account sign-up of its own, no server that receives your game records, no chat and no in-app purchases. The only sign-in is Google Play Games. We do not request or collect your name, email, phone number, location (GPS), contacts, microphone or camera, and the app does not access your device photos or gallery (the in-game “photo album” is a collection of in-game pictures). The permissions the app itself uses are internet and network state (ads, Play Games and problem reports), vibration (effects) and the advertising ID (AD_ID). The Android ad services attribution and topics APIs and the WAKE_LOCK, RECEIVE_BOOT_COMPLETED and FOREGROUND_SERVICE permissions come from the ad SDK libraries. If you contact support by email, we use your address and message only to reply."
       ]
     },
@@ -84,7 +84,7 @@
       "title": "6. Your ad choices",
       "items": [
         "Every player is asked on first launch whether to allow personalized ads, and the ad SDK does not start until you choose. If you decline, you see the same number of ads but they are not personalized, and the whole game remains playable.",
-        "You can change this anytime under Settings > \"맞춤형 광고\" (Personalized ads); the new choice applies from the next launch.",
+        "You can change this anytime under Settings > “Personalized ads”; the new choice applies from the next launch.",
         "In Android Settings > Privacy > Ads you can reset or delete your advertising ID. Once deleted, a zeroed value is sent instead and cannot be used for personalized ads.",
         "Use the privacy icon inside an ad or the Unity policy below to access, delete or opt out of ad data.",
         "With the internet turned off no ad requests are made, and the game can still be played offline (only rewarded-ad bonuses are unavailable)."
@@ -120,8 +120,8 @@
       "id": "delete-data",
       "title": "9. Deleting data and retention",
       "items": [
-        "In the game: Settings > Start over (처음부터 다시 하기) erases the progress, cats, collections and event history on this device. This cannot be undone. It does not remove Google Play Games achievements or leaderboard scores.",
-        "On the device: uninstall the app, or use Android Settings > Apps > 냥냥 해적단 (Cat Pirates) > Storage > Clear data to erase all game data including settings and unsent reports. Game progress is not kept on any TeamCP server.",
+        "In the game: Settings > Start over erases the progress, cats, collections and event history on this device. This cannot be undone. It does not remove Google Play Games achievements or leaderboard scores.",
+        "On the device: uninstall the app, or use Android Settings > Apps > (Cat Pirates) > Storage > Clear data to erase all game data including settings and unsent reports. Game progress is not kept on any TeamCP server.",
         "Reports you sent: email teamcp.channel@gmail.com with the date you sent it and your device model (and, if possible, part of the text), and we will find and delete it.",
         "Google Play Games: you can remove achievement and leaderboard records and your Play Games profile by deleting the game data or profile in the Google Play Games app (or Play Store) settings.",
         "Android backup: turn off or delete backups under Settings > Google > Backup.",

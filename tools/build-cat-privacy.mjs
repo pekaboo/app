@@ -7,11 +7,11 @@ import { policyStyle } from './policy-style.mjs';
 import { applyPolicyNotice } from './policy-notice.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
-const languages = { ko: '한국어', en: 'English', ja: '日本語', es: 'Español', 'pt-BR': 'Português (Brasil)', 'zh-TW': '中文（繁體）', fr: 'Français', de: 'Deutsch' };
+const languages = { 'zh-CN': '简体中文', en: 'English' };
 const ids = ['scope', 'local', 'google', 'ads', 'choices', 'providers', 'delete-data', 'rights', 'young-users', 'reports', 'updates'];
-const base = '/games/cat-detective/privacy/';
-const origin = 'https://sjw0408.github.io';
-const route = code => code === 'ko' ? base : `${base}${code}/`;
+const base = '/app/games/cat-detective/privacy/';
+const origin = 'https://pages.wangyitu.tech';
+const route = code => code === 'zh-CN' ? base : `${base}${code}/`;
 const esc = text => String(text).replace(/[&<>"']/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]));
 const paragraph = list => (list ?? []).map(text => `      <p>${esc(text)}</p>`).join('\n');
 const list = items => items?.length ? `      <ul>\n${items.map(text => `        <li>${esc(text)}</li>`).join('\n')}\n      </ul>` : '';
@@ -56,7 +56,7 @@ ${policyStyle(root, base)}
 </head>
 <body>
   <main>
-    <a class="back" href="/games/cat-detective/">← ${esc(data.back)}</a>
+    <a class="back" href="/app/games/cat-detective/">← ${esc(data.back)}</a>
     <nav class="languages" aria-label="Language">
 ${Object.entries(languages).map(([lang, name]) => `      <a href="${route(lang)}" lang="${lang}" hreflang="${lang}"${lang === code ? ' aria-current="page"' : ''}>${esc(name)}</a>`).join('\n')}
     </nav>
@@ -94,7 +94,7 @@ ${resources.map((href, i) => `        <li><a href="${href}">${esc(data.links[i])
 `;
   // 개인정보 보호법 추가 고지(국외 이전·권리·만 14세 미만·안전성·보호책임자): tools/policy-notice.json
   const html = applyPolicyNotice(baseHtml, 'cat-detective', code);
-  const target = resolve(root, `.${route(code)}`, 'index.html');
+  const target = resolve(root, '.', route(code).replace(/^\/app(?=\/)/, '').replace(/^\//, ''), 'index.html');
   let existing = null;
   try { existing = readFileSync(target, 'utf8'); } catch (error) { if (error.code !== 'ENOENT') throw error; }
   if (existing !== html) {
@@ -107,4 +107,4 @@ ${resources.map((href, i) => `        <li><a href="${href}">${esc(data.links[i])
   }
 }
 if (process.argv.includes('--check') && changed) process.exitCode = 1;
-else console.log(`Privacy documents: 8 languages, ${changed} ${process.argv.includes('--check') ? 'out of date' : 'updated'}.`);
+else console.log(`Privacy documents: ${Object.keys(languages).length} languages, ${changed} ${process.argv.includes('--check') ? 'out of date' : 'updated'}.`);
